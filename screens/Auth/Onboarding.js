@@ -13,7 +13,7 @@ const Onboarding = () => {
       style={{ background: "no-repeat" }}
     >
       <SafeAreaView style={{ ...padding(0, 40, 0, 40) }}>
-        <Text>Welcome to aisles</Text>
+        <Text>Welcome uoooo aisles</Text>
         <Text>Welcome to aisles</Text>
         <Text>Welcome to aisles</Text>
         <Text>Welcome to aisles</Text>
