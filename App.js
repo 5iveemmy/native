@@ -2,6 +2,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import Onboarding from "./screens/Auth/Onboarding";
 import { useFonts } from "expo-font";
+import SignUp from "./screens/Auth/SignUp";
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,7 @@ const App = () => {
         initialRouteName="Onboarding"
       >
         <Stack.Screen name="Onboarding" component={Onboarding} />
+        <Stack.Screen name="SignUp" component={SignUp} />
       </Stack.Navigator>
     </NavigationContainer>
   );
