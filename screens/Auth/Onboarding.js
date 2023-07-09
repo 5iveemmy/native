@@ -7,6 +7,7 @@ import onboarding from "../../assets/images/onboarding.png";
 import { COLORS } from "../../constansts";
 import Button from "../../components/Button";
 import { useNavigation } from "@react-navigation/native";
+import { SIZES } from "../../constansts/theme";
 
 const Onboarding = () => {
   const navigation = useNavigation();
@@ -25,7 +26,7 @@ const Onboarding = () => {
           ...padding(0, 40, 0, 40),
         }}
       >
-        <Text style={{ color: COLORS["white-01"], fontSize: 39 }}>
+        <Text style={{ color: COLORS["white-01"], fontSize: SIZES.bigFont }}>
           Welcome to aisles
         </Text>
         <Text
@@ -44,7 +45,7 @@ const Onboarding = () => {
         <Text
           style={{
             color: COLORS.primary,
-            fontSize: 16,
+            fontSize: SIZES.base,
             paddingTop: 30,
             textDecorationLine: "underline",
             textAlign: "center",
