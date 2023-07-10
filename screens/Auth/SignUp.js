@@ -62,27 +62,39 @@ const SignUp = () => {
           onChangeText={onChangeText}
           value={text}
         />
-        <PhoneInput
-          ref={phoneInput}
-          defaultValue={value}
-          defaultCode="DM"
-          layout="first"
-          onChangeText={(text) => {
-            setValue(text);
-          }}
-          containerStyle={{
-            backgroundColor: "transparent",
-            borderColor: COLORS["grey-light-01"],
-            borderWidth: 1,
-            width: "100%",
-            borderRadius: 12,
-          }}
-          textContainerStyle={{ backgroundColor: "transparent" }}
-          onChangeFormattedText={(text) => {
-            setFormattedValue(text);
-          }}
-          autoFocus
-        />
+        <View>
+          <Text
+            style={{
+              paddingBottom: 10,
+              fontSize: 13,
+              color: COLORS.primary,
+              fontWeight: 700,
+            }}
+          >
+            Phone number
+          </Text>
+          <PhoneInput
+            ref={phoneInput}
+            defaultValue={value}
+            defaultCode="DM"
+            layout="second"
+            onChangeText={(text) => {
+              setValue(text);
+            }}
+            containerStyle={{
+              backgroundColor: "transparent",
+              borderColor: COLORS["grey-light-01"],
+              borderWidth: 1,
+              width: "100%",
+              borderRadius: 12,
+            }}
+            textContainerStyle={{ backgroundColor: "transparent" }}
+            onChangeFormattedText={(text) => {
+              setFormattedValue(text);
+            }}
+            autoFocus
+          />
+        </View>
         <Input
           label="E-mail Address"
           placeholder="Enter your email address"
